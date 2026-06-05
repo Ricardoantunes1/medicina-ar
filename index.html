@@ -16,7 +16,7 @@
 <a-scene
 embedded
 vr-mode-ui="enabled: false"
-renderer="logarithmicDepthBuffer: true;"
+renderer="antialias: true; logarithmicDepthBuffer: true;"
 arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
 
 <a-marker preset="hiro">
@@ -24,9 +24,9 @@ arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
 <a-entity
 gltf-model="heart.glb"
 animation-mixer
-position="0 0 0"
-rotation="90 0 0"
-scale="0.05 0.05 0.05">
+position="0 0.3 0"
+rotation="0 90 0"
+scale="0.03 0.03 0.03">
 </a-entity>
 
 </a-marker>
