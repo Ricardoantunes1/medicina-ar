@@ -5,14 +5,11 @@
 
 <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
 <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-
 </head>
 
 <body style="margin:0; overflow:hidden;">
 
-<a-scene
-embedded
-arjs="sourceType: webcam; facingMode: environment;">
+<a-scene embedded arjs="sourceType: webcam; facingMode: environment;">
 
 <a-assets>
 <a-asset-item id="heartModel" src="heart_pulsante_v1.glb"></a-asset-item>
@@ -23,11 +20,18 @@ arjs="sourceType: webcam; facingMode: environment;">
 <a-entity
 gltf-model="#heartModel"
 position="0 0 0"
-rotation="0 0 0"
+rotation="90 0 0"
 scale="0.5 0.5 0.5">
 </a-entity>
 
 </a-marker>
+
+<a-entity light="type: ambient; intensity: 2"></a-entity>
+
+<a-entity
+light="type: directional; intensity: 3"
+position="1 1 1">
+</a-entity>
 
 <a-entity camera></a-entity>
 
