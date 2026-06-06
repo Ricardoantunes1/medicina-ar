@@ -14,13 +14,17 @@
 embedded
 arjs="sourceType: webcam; facingMode: environment;">
 
+<a-assets>
+<a-asset-item id="heartModel" src="heart.glb"></a-asset-item>
+</a-assets>
+
 <a-marker preset="hiro">
 
-<a-box
-position="0 0.25 0"
-scale="0.2 0.2 0.2"
-color="red">
-</a-box>
+<a-entity
+gltf-model="#heartModel"
+position="0 0 0"
+scale="0.5 0.5 0.5">
+</a-entity>
 
 </a-marker>
 
